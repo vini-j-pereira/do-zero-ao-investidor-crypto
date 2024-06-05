@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
     font-family: "Montserrat", sans-serif;
+    background-color: #000000e0;
 }
 
 nav{
@@ -105,5 +107,17 @@ header{
 
 .Container-desafios .title-desafios h2{
     font-family: "Bebas Neue", sans-serif;
+    color: #fff;
+}
 
+.Container-desafios .title-desafios p{
+    color: #fff;
+}
+
+.list-desafios{
+    margin-right: 6%;
+}
+
+.list-desafios p{
+    color: #fff;
 }
