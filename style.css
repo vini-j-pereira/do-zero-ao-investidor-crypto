@@ -14,6 +14,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: var(--color-background);
+    overflow-x: hidden;
 }
 
 nav{
@@ -81,7 +82,7 @@ header{
     text-align: justify;
 }
 
-.subtitle-header button{
+button{
     margin-top: 20px;
     border: none;
     padding: 10px;
@@ -92,12 +93,12 @@ header{
     transition: .2s ease-in-out;
 }
 
-.subtitle-header button a{
+button a{
     text-decoration: none;
     color: var(--color-white);
 }
 
-.subtitle-header button:hover{
+button:hover{
     transform: scale(1.03);
     background-color: var(--color-blue-secondary);
 }
@@ -193,4 +194,52 @@ header{
 .container-solucao{
     width: 100%;
     height: 100vh;
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.title-solucao{
+    width: 780px;
+    margin-top: 50px;
+    color: var(--color-white);
+}
+
+.title-solucao h2{
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+}
+
+.title-solucao h2 span{
+    color: var(--color-primary);
+}
+
+.subtitle-solucao{
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.list-solucao ul{
+    margin-bottom: 30px;
+}
+
+.list-solucao ul li{
+    list-style: circle;
+    color: #6e6e6e;
+    padding: 10px 0;
+    
+}
+
+.list-solucao p{
+    color: var(--color-white);
+    text-align: justify;
+}
+
+.list-solucao p strong{
+    color: var(--color-blue-secondary);
+}
+
+.list-solucao p span{
+    color: var(--color-blue-secondary);
 }
