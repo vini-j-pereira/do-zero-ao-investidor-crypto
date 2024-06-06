@@ -413,6 +413,55 @@ button:hover{
     text-align: justify;
 }
 
+footer{
+    background-color: #6e6e6e;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -5%;
+    margin-right: 6%;
+}
+
+.footer-links p{
+    color: var(--color-white);
+}
+
+.footer-links p span{
+    font-weight: bold;
+}
+
+.footer-links i{
+    font-size: 40px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    display: inline-block;
+}
+
+.footer-links i:hover{
+    color: var(--color-background);
+    transform: scale(1.06);
+}
+
+footer div img{
+    width: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
