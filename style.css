@@ -282,7 +282,7 @@ button:hover{
 }
 
 .box{
-    background-color: #6e6e6e;
+    background-color: #6e6e6e80;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
@@ -297,7 +297,7 @@ button:hover{
 
 .box:hover{
     transform: scale(1.05);
-    box-shadow: 0px 0px 10px 10px var(--color-blue-secondary) ;
+    box-shadow: 0px 0px 8px 8px #5384ff52 ;
 }
 
 .box h3{
@@ -355,6 +355,72 @@ button:hover{
 .btn-ebook p{
     color: var(--color-white);
 }
+
+.container-parabens{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.title-parabens{
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.title-parabens h2{
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.title-parabens h2 span{
+    color: var(--color-primary);
+}
+
+.subtitle-parabens{
+    margin: 20px 0;
+}
+
+.title-parabens p{
+    color: var(--color-white);
+    text-align: justify;
+}
+
+.txt-principal{
+    padding: 20px 0;
+}
+
+.txt-principal p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.txt-principal p strong{
+    color: var(--color-blue-secondary);
+}
+
+.chamada{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chamada p{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* Area do Slider */
+
 
 .slider{
     margin: 50px auto;
