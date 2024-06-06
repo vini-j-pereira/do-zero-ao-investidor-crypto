@@ -344,11 +344,24 @@ button:hover{
     text-align: justify;
 }
 
+.btn-ebook{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.btn-ebook p{
+    color: var(--color-white);
+}
+
 .slider{
     margin: 50px auto;
     width: 800px;
     height: 400px;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .slides{
@@ -364,6 +377,7 @@ button:hover{
 .slide{
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img{
