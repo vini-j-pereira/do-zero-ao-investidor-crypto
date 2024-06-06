@@ -315,3 +315,133 @@ button:hover{
     color: var(--color-white);
     text-align: start;
 }
+
+.container-noticias{
+    width: 100%;
+    height: 100vh;
+}
+
+.title-noticias{
+    width: 780px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px; 
+}
+
+.title-noticias h2{
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+    color: var(--color-white);
+}
+
+.title-noticias h2 span{
+    color: var(--color-primary);
+}
+
+.title-noticias p{
+    color: var(--color-white);
+    text-align: justify;
+}
+
+.slider{
+    margin: 50px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--color-blue-secondary);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: var(--color-white);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--color-blue-secondary);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--color-blue-secondary);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--color-blue-secondary);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--color-blue-secondary);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--color-blue-secondary);
+}
