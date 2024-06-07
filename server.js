@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const { PrismaClient } = require('@prisma/client');
 const bodyParser = require('body-parser');
@@ -12,7 +11,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // Inicialize o EmailJS
-emailjs.init("YOUR_USER_ID"); // Substitua YOUR_USER_ID pelo seu user ID do EmailJS
+emailjs.init(process.env.EMAILJS_USER_ID); // Substitua com seu USER_ID do EmailJS
 
 // Endpoint para criar um novo usuário
 app.post('/api/signup', async (req, res) => {
@@ -30,7 +29,7 @@ app.post('/api/signup', async (req, res) => {
       ebook_link: 'https://drive.google.com/uc?export=download&id=1wIvJOXF5SDhBvvefH6rNfIJEPky2N9Jr' // Substitua pela URL do seu e-book
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, templateParams)
       .then(function(response) {
         res.status(201).json(newUser);
       }, function(error) {
