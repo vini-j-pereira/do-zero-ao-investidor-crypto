@@ -150,15 +150,15 @@
     }
 
     .container-solucao{
-        width: 64.5% !important;
-        height: 100% !important;
+        width: 95% !important;
+        height: 100vh !important;
         display: flex;
         margin-left: 3% !important;
         margin-right: 0 !important;
     }
 
     .title-solucao{
-        width: 200px !important;
+        width: 390px !important;
         margin-top: 30px !important;
         color: var(--color-white);
     }
@@ -171,7 +171,7 @@
 
     .title-solucao p{
         font-size: 15px !important;
-        text-align: start !important;
+        text-align: justify !important;
         line-height: 1.4 !important;
     }
 
