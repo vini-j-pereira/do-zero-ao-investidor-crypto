@@ -390,6 +390,13 @@
         display: none !important;
     }
 
+
+    /* Area de Cadastro */
+
+   .content-img{
+    display: none;
+   }
+
     
     
 
