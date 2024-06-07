@@ -397,6 +397,20 @@
     display: none;
    }
 
+   .container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-left: 0 !important;
+}
+
+.container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-left: 7% !important;
+    margin-top: 60px;
+}
     
     
 
